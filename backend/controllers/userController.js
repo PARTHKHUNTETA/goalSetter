@@ -47,7 +47,7 @@ const registerUser = asyncHandler(async (req, res) => {
     }
     else {
         res.status(400)
-        throw new error('Invalid User Data')
+        throw new Error('Invalid User Data')
     }
 
 })
@@ -70,7 +70,7 @@ const loginUser = asyncHandler(async (req, res) => {
     }
     else {
         res.status(400)
-        throw new error('Invalid Credentials')
+        throw new Error('Invalid Credentials')
     }
 
 }
